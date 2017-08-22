@@ -1,0 +1,5 @@
+{
+    "editor.wordWrap": "on",
+    "editor.tabCompletion": true,
+    "npm-intellisense.showBuildInLibs": true
+}

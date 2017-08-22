@@ -1,0 +1,25 @@
+{
+  "name": "liriapp",
+  "version": "1.0.0",
+  "description": "my liri app",
+  "main": "Liri.js",
+  "dependencies": {
+    "colors": "^1.1.2",
+    "inquirer": "^3.2.2",
+    "moment": "^2.18.1",
+    "moviedb": "^0.2.8",
+    "node-spotify-api": "^1.0.7",
+    "omdb": "^0.8.0",
+    "spotify": "^0.3.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://johcare.github.io/-Liri-node-app/."
+  },
+  "author": "Yauheni",
+  "license": "ISC"
+}
