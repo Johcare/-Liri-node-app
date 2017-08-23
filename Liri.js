@@ -21,9 +21,9 @@ const client = new twitter(keys.twitterKeys);
 const userCommand = process.argv[2]; //3rd argument [index 2] at terminal becomes LiriCommand
 var userData = process.argv.slice(3).join(" "); //grabs all terms typed in 4th argument and on
 
-//console.log("__________userData__________");
-//console.log(userData);
-//console.log("____________________________");
+console.log("__________userData__________");
+console.log(userData);
+console.log("____________________________");
 
 //Switch statement to run the right function based off the command by the user
 
@@ -197,64 +197,7 @@ function omdbCall() {
             }
             console.log(MovieObj)
         });
-    
-
-
-
-    // var omdbUrl = 'http://www.omdbapi.com/?t=' + movie + '&y=&plot=short&tomatoes=true&r=json';
-
-    // console.log("__________omdb_url__________");
-    // console.log(omdbUrl);
-    // console.log("____________________________");
-
-    // request(omdbUrl, function(err, response, body) {
-    //     if (!err && response.statusCode === 200) {
-
-    //         var data = JSON.parse(body);
-
-    //         logEntry.title = data.Title;
-    //         logEntry.released = data.Year;
-    //         logEntry.imdbRating = data.imdbRating;
-    //         logEntry.country = data.Country;
-    //         logEntry.language = data.Language;
-    //         logEntry.plot = data.Plot;
-    //         logEntry.actors = data.Actors;
-    //         if (typeof data.Ratings !== "undefined") {
-    //             logEntry.tomatoRating = data.Ratings[1].Value;
-    //         }
-    //         logEntry.tomatoURL = data.tomatoURL;
-
-    //         console.log("");
-    //         console.log(colors.magenta("____________Movie Info__________________"));
-    //         console.log("");
-    //         console.log(colors.magenta("Title: ") + logEntry.title);
-    //         console.log(colors.magenta("Release Year: ") + logEntry.released);
-    //         console.log(colors.magenta("IMDB Rating: ") + logEntry.imdbRating);
-    //         console.log(colors.magenta("Origin Country: ") + logEntry.country);
-    //         console.log(colors.magenta("Language: ") + logEntry.Language);
-    //         console.log("");
-    //         console.log(colors.magenta("Plot: ") + logEntry.plot);
-    //         console.log("");
-    //         console.log(colors.magenta("Actors: ") + logEntry.actors);
-    //         console.log("");
-    //         if (typeof data.Ratings === "undefined") {
-    //             console.log(colors.magenta("Rotten Tomatoes Rating:") + "N/A");
-    //         } else {
-    //             console.log(colors.magenta("Rotten Tomatoes Rating: ") + logEntry.tomatoRating);
-    //         }
-    //         console.log(colors.magenta("Rotten Tomatoes URL: ") + data.tomatoURL);
-    //         console.log(colors.magenta("________________________________________"));
-    //         logEntry.response = 'success';
-    //     } else {
-    //         throw err
-    //         logEntry.error = true;
-    //     }
-
-    //     logData(logEntry);
-
-    // });
 }
-
 // function to call a random command from random.txt
 function randomCall() {
 
